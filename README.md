@@ -1,10 +1,11 @@
 # OddsCheckerScraper
 Odds Checker Scraper
 
-1. Run code using `./start.sh`\
+1. Install dependencies using `npm i` (This should create the `./node_modules` folder and install dependencies).\
+   Then run code using `./start.sh` (This should create the `./dst` folder which will convert `index.ts` to `index.js`)\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/1c4e1663-4112-4772-8919-460be298d10a)
 
-2. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
+3. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
 (e.g. \
 `https://www.oddschecker.com/horse-racing/newmarket/16:15/winner`,\
 `https://www.oddschecker.com/horse-racing/2023-10-01-epsom-downs/16:00/winner`)
@@ -25,7 +26,7 @@ Page for specific chosen fixture.
 `http://localhost:3000/odds/newmarket/16:15`,\
 `http://localhost:3000/odds/2023-10-01-epsom-downs/16:00`)\
 \
-This will load up a variant of Chrome and load the fixture url.\
+This will load up a variant of Chrome, load the fixture url and scrape the odds before closing.\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/67001313-8f88-4518-a8d0-1c83698f8b02)\
 \
 6. Navigate back to the browser you used to access the `http://localhost:3000/odds/.../...` endpoint.\
