@@ -1,11 +1,12 @@
 # OddsCheckerScraper
 **MacOS** instructions (No support for Windows)
 
-1. Install dependencies using `npm i` (This should create the `./node_modules` folder and install dependencies).\
-   Then run code using `./start.sh` (This should create the `./dst` folder which will convert `index.ts` to `index.js`)\
+1. Clone repo and install dependencies using `npm i` (This should create the `./node_modules` folder).
+2. Whilst in the directory with the `start.sh` file, go to the terminal and give it permission by entering the command `chmod +x ./start.sh`.
+3. Then run the project using the `./start.sh` command (This should create the `./dst` folder which will convert `index.ts` to `index.js`)\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/1c4e1663-4112-4772-8919-460be298d10a)
 
-3. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
+4. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
 (e.g. \
 `https://www.oddschecker.com/horse-racing/newmarket/16:15/winner`,\
 `https://www.oddschecker.com/horse-racing/2023-10-01-epsom-downs/16:00/winner`)
@@ -40,5 +41,6 @@ That should have a JSON of the odds for B365 as seen on OddsChecker!
 
 **TODO**:\
 Figure out why it doesn't work on Windows.\
-Add support for other providers
+Add support for other providers.\
+Improve Authentication.
 
