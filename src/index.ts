@@ -42,7 +42,7 @@ let scrapePage = async (url: string) => {
 
     await page.waitForSelector('.diff-row.evTabRow.bc'); // Will time out after 30secs if not found. Check if URL is correct.
 
-    return await page.evaluate(async () => {
+    const scrapedOdds = await page.evaluate(async () => {
 
       class HorseNameAndOdds {
         horseName: string = "";
@@ -68,6 +68,10 @@ let scrapePage = async (url: string) => {
 
       return res;
     });
+    
+    await browser.close()
+    return scrapedOdds
+    
   } catch (e) {
     console.log(e);
     throw e;
