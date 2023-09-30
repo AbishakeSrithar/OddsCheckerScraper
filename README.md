@@ -32,8 +32,6 @@ This will load up a variant of Chrome and load the fixture url.\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/b123f4f9-c016-44b9-9a9d-78d8707f5c98)\
 \
 That should have a JSON of the odds for B365 as seen on OddsChecker!
-\
-
 
 
 
