@@ -69,8 +69,8 @@ let scrapePage = async (url: string) => {
       return res;
     });
     
-    await browser.close()
-    return scrapedOdds
+    await browser.close();
+    return scrapedOdds;
     
   } catch (e) {
     console.log(e);
