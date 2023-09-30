@@ -1,5 +1,5 @@
 # OddsCheckerScraper
-Odds Checker Scraper
+**MacOS** instructions (Not supported for Windows)
 
 1. Install dependencies using `npm i` (This should create the `./node_modules` folder and install dependencies).\
    Then run code using `./start.sh` (This should create the `./dst` folder which will convert `index.ts` to `index.js`)\
@@ -34,5 +34,5 @@ This will load up a variant of Chrome, load the fixture url and scrape the odds 
 \
 That should have a JSON of the odds for B365 as seen on OddsChecker!
 
-
+**TODO**: Figure out why it doesn't work on Windows.
 
