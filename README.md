@@ -4,7 +4,6 @@
 1. Clone repo and install dependencies using `npm i` (This should create the `./node_modules` folder).
 2. Whilst in the directory with the `start.sh` file, go to the terminal and give it permission by entering the command `chmod +x ./start.sh`.
 3. Then run the project using the `./start.sh` command (This should create the `./dst` folder which will convert `index.ts` to `index.js`)\
-![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/1c4e1663-4112-4772-8919-460be298d10a)
 
 4. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
 (e.g. \
