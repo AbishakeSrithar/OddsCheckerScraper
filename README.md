@@ -1,5 +1,5 @@
 # OddsCheckerScraper
-**MacOS** instructions (Not supported for Windows)
+**MacOS** instructions (No support for Windows)
 
 1. Install dependencies using `npm i` (This should create the `./node_modules` folder and install dependencies).\
    Then run code using `./start.sh` (This should create the `./dst` folder which will convert `index.ts` to `index.js`)\
@@ -21,12 +21,16 @@ Page for specific chosen fixture.
 `newmarket/16:15`,\
 `2023-10-01-epsom-downs/16:00`)\
 \
-5. Append as params to our endpoint `http://localhost:3000/odds/.../...` and hit enter\
+5. Append as params to our endpoint `http://localhost:3000/odds/.../...` and hit enter.\
 (e.g. \
 `http://localhost:3000/odds/newmarket/16:15`,\
 `http://localhost:3000/odds/2023-10-01-epsom-downs/16:00`)\
+
+Log in using these credentials if prompted (should only need this on first attempt):\
+**User:** `admin123`\
+**Password:** `password123`\
 \
-This will load up a variant of Chrome, load the fixture url and scrape the odds before closing.\
+This will load up a variant of Chrome, load the fixture url and scrape the odds for the B365 column before closing.\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/67001313-8f88-4518-a8d0-1c83698f8b02)\
 \
 6. Navigate back to the browser you used to access the `http://localhost:3000/odds/.../...` endpoint.\
@@ -34,5 +38,7 @@ This will load up a variant of Chrome, load the fixture url and scrape the odds 
 \
 That should have a JSON of the odds for B365 as seen on OddsChecker!
 
-**TODO**: Figure out why it doesn't work on Windows.
+**TODO**:\
+Figure out why it doesn't work on Windows.\
+Add support for other providers
 
