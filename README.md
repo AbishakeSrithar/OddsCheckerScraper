@@ -48,3 +48,6 @@ That should have a JSON of the odds for B365 as seen on OddsChecker!
 Add support for other providers.\
 Improve Authentication.
 
+**Assumptions**:\
+Fixture page for all tracks/times/dates are of a similar format. Selectors for Rows, Horse Names, Odds do not change (this will easily break the scraper but can also easily be fixed). Whilst checking I did notice for finished games the selector for odds was different to yet to be played games. Added support for both.
+Currently I've only hit the webpage a few times. If usage of scraper goes up, could find our IP being blocked or some other anti bot mechanism kicking in.
