@@ -3,7 +3,7 @@
 
 1. Clone repo and install dependencies using `npm i` (This should create the `./node_modules` folder).
 2. Whilst in the directory with the `start.sh` file, go to the terminal and give it permission by entering the command `chmod +x ./start.sh`.
-3. Then run the project using the `./start.sh` command (This should create the `./dst` folder which will convert `index.ts` to `index.js`)\
+3. Then run the project using the `./start.sh` command (This should create the `./dst` folder which will convert `index.ts` to `index.js`)
 
 4. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
 (e.g. \
@@ -24,7 +24,7 @@ Page for specific chosen fixture.
 5. Append as params to our endpoint `http://localhost:3000/odds/.../...` and hit enter.\
 (e.g. \
 `http://localhost:3000/odds/newmarket/16:15`,\
-`http://localhost:3000/odds/2023-10-01-epsom-downs/16:00`)\
+`http://localhost:3000/odds/2023-10-01-epsom-downs/16:00`)
 
 Log in using these credentials if prompted (should only need this on first attempt):\
 **User:** `admin123`\
