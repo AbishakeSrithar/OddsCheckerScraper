@@ -2,11 +2,10 @@
 **MacOS**/**Windows** instructions
 
 1. Clone repo and install dependencies using `npm i` (This should create the `./node_modules` folder).
-2. Whilst in the directory with the `start.sh` file, go to the terminal and give it permission by entering the command\
-   Linux/MacOS: `chmod +x ./start.sh`\
-   Windows: We won't be using the `start.sh` file so can skip this step.
+2. Linux/MacOS: Whilst in the directory with the `start.sh` file, go to the terminal and give it permission by entering the command `chmod +x ./start.sh`\
+   Windows: We won't be using the `start.sh` file so you can skip this step.
 3. Then run the project using\
-   **Linux/MacOS**: `./start.sh` command\
+   **Linux/MacOS**: `./start.sh` command which will compile and run\
    **Windows**: `tsc` command to compile into `.dst/index.js` and then the `node ./dst/index.js` command to run the code.
 
 4. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
@@ -26,7 +25,7 @@ Input these credentials as Basic Auth underneath the Authorization header:\
 **Password:** `password123`\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/03a64950-6652-4ad1-a0f9-f6269db290db)\
 \
-6. Insert eventUrl into the body as a JSON and hit enter.\
+6. Insert eventUrl into the body raw as a JSON and hit send.\
 (e.g. \
 `{
 "eventUrl": "https://www.oddschecker.com/horse-racing/newmarket/16:15/winner"
