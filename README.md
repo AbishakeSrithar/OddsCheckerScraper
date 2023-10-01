@@ -1,9 +1,13 @@
 # OddsCheckerScraper
-**MacOS** instructions (No support for Windows)
+**MacOS**/**Windows** instructions
 
 1. Clone repo and install dependencies using `npm i` (This should create the `./node_modules` folder).
-2. Whilst in the directory with the `start.sh` file, go to the terminal and give it permission by entering the command `chmod +x ./start.sh`.
-3. Then run the project using the `./start.sh` command (This should create the `./dst` folder which will convert `index.ts` to `index.js`)
+2. Whilst in the directory with the `start.sh` file, go to the terminal and give it permission by entering the command\
+   Linux/MacOS: `chmod +x ./start.sh`\
+   Windows: We won't be using the `start.sh` file so can skip this step.
+3. Then run the project using\
+   **Linux/MacOS**: `./start.sh` command\
+   **Windows**: `tsc` command to compile into `.dst/index.js` and then the `node ./dst/index.js` command to run the code.
 
 4. Select the fixture you want to scrape on https://www.oddschecker.com/horse-racing \
 (e.g. \
@@ -16,7 +20,7 @@ Page with Horse Racing fixtures, listed by track and time with tabs for differen
 Page for specific chosen fixture.
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/a2f1cdd3-1a43-4076-a9c6-bbf499ddb297)\
 \
-4. Append eventUrl to our endpoint `http://localhost:3000/odds?eventUrl={eventUrl}` and hit enter.\
+5. Append eventUrl to our endpoint `http://localhost:3000/odds?eventUrl={eventUrl}` and hit enter.\
 (e.g. \
 `http://localhost:3000/odds?eventUrl=https://www.oddschecker.com/horse-racing/newmarket/16:15/winner`,\
 `http://localhost:3000/odds?eventUrl=https://www.oddschecker.com/horse-racing/2023-10-01-epsom-downs/16:00/winner`)
@@ -34,7 +38,6 @@ This will load up a variant of Chrome, load the fixture url and scrape the odds 
 That should have a JSON of the odds for B365 as seen on OddsChecker!
 
 **TODO**:\
-Figure out why it doesn't work on Windows.\
 Add support for other providers.\
 Improve Authentication.
 
