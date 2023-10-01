@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer";
+import bodyParser from 'body-parser';
 
 const express = require('express');
 const basicAuth = require('express-basic-auth');
@@ -6,17 +7,25 @@ const app = express();
 
 // Define your username and password for basic authentication
 const basicAuthConfig = {
-  users: { 'admin123': 'password123' }, // ToDo: Improve Auth
+  users: { 'admin123': 'password123' }, // Replace with your desired username and password
   challenge: true, // This will prompt for authentication
 };
 
+// Add basic authentication to the endpoint
 app.use('/odds', basicAuth(basicAuthConfig));
+
+// Use body-parser middleware to parse JSON
+app.use(bodyParser.json());
 
 // e.g. http://localhost:3000/odds?eventUrl=https://www.oddschecker.com/horse-racing/tipperary/14:40/winner
 // @ts-ignore
-app.get('/odds', (req, res) => {
+app.post('/odds', async (req, res) => {
+
+  const { eventUrl } = req.body;
+
   try {
-    scrapePage(req.query.eventUrl).then(r => res.send((r)));
+    const scrapedOdds = await scrapePage(eventUrl);
+    res.json(scrapedOdds);
   } catch (e) {
     res.status(500).json({ error: "An error occurred while fetching odds data." });
   }
