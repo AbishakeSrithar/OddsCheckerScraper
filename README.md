@@ -20,20 +20,26 @@ Page with Horse Racing fixtures, listed by track and time with tabs for differen
 Page for specific chosen fixture.
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/a2f1cdd3-1a43-4076-a9c6-bbf499ddb297)\
 \
-5. Append eventUrl to our endpoint `http://localhost:3000/odds?eventUrl={eventUrl}` and hit enter.\
-(e.g. \
-`http://localhost:3000/odds?eventUrl=https://www.oddschecker.com/horse-racing/newmarket/16:15/winner`,\
-`http://localhost:3000/odds?eventUrl=https://www.oddschecker.com/horse-racing/2023-10-01-epsom-downs/16:00/winner`)
-
-Log in using these credentials if prompted (should only need this on first attempt):\
+5. Using Postman or your prefered API platform, set to POST and use this url: `http://localhost:3000/odds`.\
+Input these credentials as Basic Auth underneath the Authorization header:\
 **User:** `admin123`\
 **Password:** `password123`\
+![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/03a64950-6652-4ad1-a0f9-f6269db290db)\
 \
-This will load up a variant of Chrome, load the fixture url and scrape the odds for the B365 column before closing.\
+6. Insert eventUrl into the body as a JSON and hit enter.\
+(e.g. \
+`{
+"eventUrl": "https://www.oddschecker.com/horse-racing/newmarket/16:15/winner"
+}`\
+`{
+"eventUrl": "https://www.oddschecker.com/horse-racing/2023-10-01-epsom-downs/16:00/winner"
+}`)
+\
+This will load up a variant of Chrome, load the event url and scrape the odds for the B365 column before closing.\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/67001313-8f88-4518-a8d0-1c83698f8b02)\
 \
-6. Navigate back to the browser you used to access the `http://localhost:3000/odds?eventUrl={eventUrl}` endpoint.\
-![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/e401b1ce-ea9f-4c4e-a6c8-4b3c49afff4a)\
+7. Navigate back to your preferred API platform.\
+![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/0cb66443-07b8-4659-b524-77fb76c17849)\
 \
 That should have a JSON of the odds for B365 as seen on OddsChecker!
 
