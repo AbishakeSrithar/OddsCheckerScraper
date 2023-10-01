@@ -6,11 +6,10 @@ const app = express();
 
 // Define your username and password for basic authentication
 const basicAuthConfig = {
-  users: { 'admin123': 'password123' }, // Replace with your desired username and password
+  users: { 'admin123': 'password123' }, // ToDo: Improve Auth
   challenge: true, // This will prompt for authentication
 };
 
-// Add basic authentication to the endpoint
 app.use('/odds', basicAuth(basicAuthConfig));
 
 // e.g. http://localhost:3000/odds?eventUrl=https://www.oddschecker.com/horse-racing/tipperary/14:40/winner
