@@ -35,6 +35,8 @@ Input these credentials as Basic Auth underneath the Authorization header:\
 "eventUrl": "https://www.oddschecker.com/horse-racing/2023-10-01-epsom-downs/16:00/winner"
 }`)
 \
+![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/38e15238-0bbe-4e33-b206-f5761f670fb4)\
+\
 This will load up a variant of Chrome, load the event url and scrape the odds for the B365 column before closing.\
 ![image](https://github.com/AbishakeSrithar/OddsCheckerScraper/assets/67220345/67001313-8f88-4518-a8d0-1c83698f8b02)\
 \
