@@ -1,5 +1,5 @@
 # OddsCheckerScraper
-**Objective**: Scrape Horse Racing odds from a bookmaker of your choice and expose an endpoint that takes in it's URL and returns the scraped odds.\
+**Objective**: Scrape Horse Racing odds from a bookmaker of your choice and expose an endpoint that takes in it's URL and returns the scraped odds.
 
 **MacOS**/**Windows** instructions
 
